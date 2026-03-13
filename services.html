@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Sky Global Travel & Tours</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('images/IMG_5560.JPG');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-detail-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            border-top: 5px solid var(--secondary-color);
+            transition: var(--transition);
+        }
+
+        .service-detail-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-detail-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .service-detail-card h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .service-detail-card ul {
+            margin-top: 15px;
+            text-align: left;
+            padding-left: 20px;
+            list-style-type: check;
+        }
+
+        .service-detail-card li {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #555;
+            list-style: disc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo/logo.jpeg" alt="Sky Global Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="visa-services.html">Visa Services</a></li>
+                    <li><a href="contact.html" class="btn-primary">Contact Us</a></li>
+                </ul>
+                <div class="mobile-menu-btn" style="display: none;">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header"
+        style="background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('images/IMG_5557.JPG'); padding: 150px 0;">
+        <div class="container reveal">
+            <h1>Our Expert Services</h1>
+            <p>Study, Travel, and Explore with Confidence</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="service-details reveal">
+                <div class="service-detail-card glass text-center" style="padding: 50px; border-radius: 20px;">
+                    <h2>Solutions We Provide</h2>
+                    <p>From visa guidance to flight tickets and holiday planners, we cover all aspects of your travel.
+                    </p>
+                </div>
+            </div>
+            <div class="services-list">
+                <div class="service-detail-card">
+                    <i class="fas fa-plane-departure"></i>
+                    <h3>Tourist Visa Assistance</h3>
+                    <p>We provide end-to-end support for tourist visa applications to various countries including UAE,
+                        Qatar, Malaysia, and more.</p>
+                    <ul>
+                        <li>Document Verification</li>
+                        <li>Application Submission</li>
+                        <li>Interview Preparation</li>
+                    </ul>
+                </div>
+                <div class="service-detail-card">
+                    <i class="fas fa-user-graduate"></i>
+                    <h3>Study Visa Guidance</h3>
+                    <p>Unlock global educational opportunities with our specialized study visa services. We guide
+                        students through every hurdle of the application process.</p>
+                    <ul>
+                        <li>University & Course Selection Advice</li>
+                        <li>Sponsorship & Financial Documentation</li>
+                        <li>Statement of Purpose (SOP) Assistance</li>
+                        <li>Mock Visa Interviews</li>
+                        <li>English Test (IELTS/PTE) Guidance</li>
+                    </ul>
+                </div>
+                <div class="service-detail-card">
+                    <i class="fas fa-ticket-alt"></i>
+                    <h3>Flight Ticket Booking</h3>
+                    <p>Get the best deals on international and domestic flights with flexible booking options.</p>
+                    <ul>
+                        <li>Competitive Prices</li>
+                        <li>Group Bookings</li>
+                        <li>Last-minute Changes</li>
+                    </ul>
+                </div>
+                <div class="service-detail-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Holiday Packages</h3>
+                    <p>Experience the world with our curated holiday packages tailored to your interests and budget.</p>
+                    <ul>
+                        <li>Custom Itineraries</li>
+                        <li>Hotel Bookings</li>
+                        <li>Local Tours & Activities</li>
+                    </ul>
+                </div>
+                <div class="service-detail-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Travel Consultation</h3>
+                    <p>Professional advice on travel requirements, safety, and destinations worldwide.</p>
+                    <ul>
+                        <li>Destination Insights</li>
+                        <li>Travel Insurance</li>
+                        <li>Health Regulations</li>
+                    </ul>
+                </div>
+                <div class="service-detail-card">
+                    <i class="fas fa-file-signature"></i>
+                    <h3>Visa Assistance</h3>
+                    <p>Comprehensive support for all types of visas, ensuring a high success rate.</p>
+                    <ul>
+                        <li>Personalized Consultation</li>
+                        <li>Form Filling</li>
+                        <li>Tracking & Updates</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--light-bg); text-align: center;">
+        <div class="container">
+            <h2>Need a personalized quote?</h2>
+            <p style="margin: 20px 0 30px;">Contact our travel experts for a customized package or visa consultation.
+            </p>
+            <a href="contact.html" class="btn-primary">Request a Quote</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Sky Global Travel & Tours</h3>
+                    <p>Connecting you to the world with professional travel and visa services.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> [Your Office Address]</p>
+                    <p><i class="fas fa-phone" style="margin-right: 10px;"></i> [Your Phone Number]</p>
+                    <p><i class="fab fa-whatsapp" style="margin-right: 10px;"></i> [Your WhatsApp Link]</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sky Global Travel & Tours. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

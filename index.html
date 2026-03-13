@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Global Travel & Tours - Your Trusted Travel Partner</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0, 51, 102, 0.6), rgba(0, 51, 102, 0.6)), url('images/IMG_5552.JPG');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .destination-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .dest-card {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 300px;
+            box-shadow: var(--shadow);
+        }
+
+        .dest-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .dest-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .dest-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            padding: 20px;
+            color: white;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card i {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo/logo.jpeg" alt="Sky Global Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="visa-services.html">Visa Services</a></li>
+                    <li><a href="contact.html" class="btn-primary">Contact Us</a></li>
+                </ul>
+                <div class="mobile-menu-btn" style="display: none;">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content reveal">
+            <h1>Expert Visa & <br><span style="color: var(--secondary-color);">Travel Solutions</span></h1>
+            <p>Your trusted partner for <strong>Study Visas, Tourist Visas,</strong> and international travel
+                experiences across the globe.</p>
+            <div style="display: flex; gap: 20px; justify-content: center; margin-top: 40px;">
+                <a href="visa-services.html" class="btn-primary">Study & Tourist Visas</a>
+                <a href="destinations.html" class="btn-primary"
+                    style="background: rgba(255,255,255,0.1); backdrop-filter: blur(5px); border: 1px solid rgba(255,255,255,0.3);">Explore
+                    Packages</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Our Premium Services</h2>
+                <div class="header-line"></div>
+                <p>We provide end-to-end support for all your travel and visa needs with unmatched professionalism.</p>
+            </div>
+            <div class="destination-grid reveal">
+                <div class="dest-card">
+                    <img src="images/IMG_5553.JPG" alt="Dubai">
+                    <div class="dest-info">
+                        <h3>Dubai</h3>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="images/IMG_5554.JPG" alt="Doha">
+                    <div class="dest-info">
+                        <h3>Doha (Qatar)</h3>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="images/IMG_5555.JPG" alt="Malaysia">
+                    <div class="dest-info">
+                        <h3>Malaysia</h3>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="images/IMG_5556.JPG" alt="Cape Town">
+                    <div class="dest-info">
+                        <h3>Cape Town</h3>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="images/IMG_5557.JPG" alt="Zanzibar">
+                    <div class="dest-info">
+                        <h3>Zanzibar</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--light-bg);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Core Services</h2>
+                <p>We provide a wide range of travel and visa related services to make your journey seamless.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-user-graduate"></i>
+                    <h3>Study Visa</h3>
+                    <p>Expert consultation for students aiming for top universities worldwide. Document prep and
+                        interview coaching.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-passport"></i>
+                    <h3>Tourist Visa</h3>
+                    <p>Hassle-free tourist visa assistance for Dubai, Qatar, Malaysia, and many more global
+                        destinations.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-plane"></i>
+                    <h3>Tickets & Tours</h3>
+                    <p>Seamless flight bookings and customized holiday packages tailored to your budget and preferences.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--primary-color); color: white; text-align: center;">
+        <div class="container">
+            <h2>Ready to plan your next trip?</h2>
+            <p style="margin: 20px 0 30px; color: #BDC3C7;">Let our experts help you with all your travel needs.</p>
+            <a href="contact.html" class="btn-primary" style="background: var(--secondary-color);">Get a Free
+                Consultation</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Sky Global Travel & Tours</h3>
+                    <p>Connecting you to the world with professional travel and visa services.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> [Your Office Address]</p>
+                    <p><i class="fas fa-phone" style="margin-right: 10px;"></i> [Your Phone Number]</p>
+                    <p><i class="fab fa-whatsapp" style="margin-right: 10px;"></i> [Your WhatsApp Link]</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sky Global Travel & Tours. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Services - Sky Global Travel & Tours</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('images/IMG_5552.JPG');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+        }
+
+        .visa-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .tab-btn {
+            padding: 15px 30px;
+            background: white;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            font-weight: 600;
+            color: var(--primary-color);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .tab-btn.active,
+        .tab-btn:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .visa-content-section {
+            background: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            display: none;
+        }
+
+        .visa-content-section.active {
+            display: block;
+        }
+
+        .visa-type-info h2 {
+            color: var(--primary-color);
+            margin-bottom: 25px;
+        }
+
+        .doc-list {
+            margin: 30px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .doc-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: var(--light-bg);
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .doc-item i {
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+        }
+
+        .process-steps {
+            margin-top: 50px;
+        }
+
+        .step-item {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .step-num {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .step-text h4 {
+            margin-bottom: 5px;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo/logo.jpeg" alt="Sky Global Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="visa-services.html">Visa Services</a></li>
+                    <li><a href="contact.html" class="btn-primary">Contact Us</a></li>
+                </ul>
+                <div class="mobile-menu-btn" style="display: none;">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Visa Services</h1>
+            <p>Your Path to a Global Future Starts Here</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="visa-tabs reveal">
+                <button class="tab-btn active" data-tab="tourist">Tourist Visa</button>
+                <button class="tab-btn" data-tab="student">Student Visa</button>
+            </div>
+
+            <!-- Tourist Visa Tab -->
+            <div class="visa-content-section active reveal" id="tourist-tab">
+                <div class="visa-type-info">
+                    <h2>Tourist Visa Assistance</h2>
+                    <p>Whether you're planning a vacation or visiting family, our travel experts ensure your tourist
+                        visa application is perfect. We specialize in visas for Dubai, Qatar, Malaysia, South Africa,
+                        and more.</p>
+
+                    <h3>Required Documents</h3>
+                    <div class="doc-list">
+                        <div class="doc-item"><i class="fas fa-file-alt"></i> Valid Passport (6 mo)</div>
+                        <div class="doc-item"><i class="fas fa-image"></i> White Map Background Photos</div>
+                        <div class="doc-item"><i class="fas fa-university"></i> 6 Months Bank Statement</div>
+                        <div class="doc-item"><i class="fas fa-plane"></i> Return Flight Tickets</div>
+                        <div class="doc-item"><i class="fas fa-hotel"></i> Confirm Accommodation</div>
+                        <div class="doc-item"><i class="fas fa-briefcase"></i> NOC from Employer</div>
+                    </div>
+
+                    <div class="process-steps">
+                        <h3>Application Process</h3>
+                        <div class="step-item">
+                            <div class="step-num">1</div>
+                            <div class="step-text">
+                                <h4>Free Assessment</h4>
+                                <p>We evaluate your profile and check document completeness for the chosen country.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">2</div>
+                            <div class="step-text">
+                                <h4>File Preparation</h4>
+                                <p>Our team fills out forms and organizes your coversheet professionally.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">3</div>
+                            <div class="step-text">
+                                <h4>Submission & Tracking</h4>
+                                <p>We submit the application and keep you updated on every stage of processing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student Visa Tab -->
+            <div class="visa-content-section" id="student-tab">
+                <div class="visa-type-info">
+                    <h2>Student Visa Guidance</h2>
+                    <p>Securing a student visa is a critical step in your international education journey. Sky Global
+                        provides dedicated support for students heading to Europe, North America, Australia, and Asia.
+                    </p>
+
+                    <h3>Required Documents</h3>
+                    <div class="doc-list">
+                        <div class="doc-item"><i class="fas fa-graduation-cap"></i> Admission Letter (CAS/I-20)</div>
+                        <div class="doc-item"><i class="fas fa-certificate"></i> Academic Transcripts</div>
+                        <div class="doc-item"><i class="fas fa-language"></i> IELTS/PTE/TOEFL Scores</div>
+                        <div class="doc-item"><i class="fas fa-wallet"></i> Proof of Funds (Sponsorship)</div>
+                        <div class="doc-item"><i class="fas fa-file-signature"></i> Statement of Purpose (SOP)</div>
+                        <div class="doc-item"><i class="fas fa-id-card"></i> Identification Documents</div>
+                    </div>
+
+                    <div class="process-steps">
+                        <h3>Study Visa Roadmap</h3>
+                        <div class="step-item">
+                            <div class="step-num">1</div>
+                            <div class="step-text">
+                                <h4>Subject & Uni Selection</h4>
+                                <p>We help you find the right course that fits your career goals and budget.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">2</div>
+                            <div class="step-text">
+                                <h4>Offer Letter & Admission</h4>
+                                <p>Ensuring your application to the university stands out for clear acceptance.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">3</div>
+                            <div class="step-text">
+                                <h4>Visa Interview Prep</h4>
+                                <p>One-on-one mock interviews to build confidence for the embassy appointment.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">4</div>
+                            <div class="step-text">
+                                <h4>Pre-Departure Briefing</h4>
+                                <p>Essential tips for living abroad, accommodation, and arrival support.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--primary-color); color: white; text-align: center;">
+        <div class="container">
+            <h2>Ready to Start Your Application?</h2>
+            <p style="margin: 20px 0 30px; color: #BDC3C7;">Let our visa experts guide you to a successful outcome.</p>
+            <a href="contact.html" class="btn-primary" style="background: var(--secondary-color);">Book a
+                Consultation</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Sky Global Travel & Tours</h3>
+                    <p>Connecting you to the world with professional travel and visa services.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> [Your Office Address]</p>
+                    <p><i class="fas fa-phone" style="margin-right: 10px;"></i> [Your Phone Number]</p>
+                    <p><i class="fab fa-whatsapp" style="margin-right: 10px;"></i> [Your WhatsApp Link]</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sky Global Travel & Tours. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
