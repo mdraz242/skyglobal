@@ -173,8 +173,13 @@ header .btn-primary {
 }
 
 .hero {
+<<<<<<< HEAD
     height: 110vh;
     background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('../images/hero.jpeg');
+=======
+    height: 100vh;
+    background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('../images/IMG_5552.JPG');
+>>>>>>> 218b93a6751ad60c0d738a62c802653649dd85c5
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -288,9 +293,12 @@ footer ul li a:hover {
 }
 
 @media (max-width: 768px) {
+<<<<<<< HEAD
     .container {
         padding: 0 15px;
     }
+=======
+>>>>>>> 218b93a6751ad60c0d738a62c802653649dd85c5
     header {
         padding: 0.8rem 0;
     }
@@ -299,16 +307,25 @@ footer ul li a:hover {
         position: fixed;
         top: 0;
         right: -100%;
+<<<<<<< HEAD
         width: 100%;
+=======
+        width: 80%;
+>>>>>>> 218b93a6751ad60c0d738a62c802653649dd85c5
         height: 100vh;
         background: white;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         transition: 0.5s;
+<<<<<<< HEAD
         box-shadow: none;
         z-index: 1002;
         gap: 2rem;
+=======
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+>>>>>>> 218b93a6751ad60c0d738a62c802653649dd85c5
     }
 
     .nav-links.active {
@@ -317,6 +334,7 @@ footer ul li a:hover {
 
     .mobile-menu-btn {
         display: block !important;
+<<<<<<< HEAD
         font-size: 1.8rem;
         cursor: pointer;
         color: var(--primary-color);
@@ -339,6 +357,16 @@ footer ul li a:hover {
 
     .hero-mini {
         height: 70vh !important;
+=======
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--primary-color);
+        z-index: 1001;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+>>>>>>> 218b93a6751ad60c0d738a62c802653649dd85c5
     }
 
     .section {
