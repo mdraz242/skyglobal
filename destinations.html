@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Sky Global Travel & Tours</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('images/IMG_5553.JPG');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .dest-grid-detailed {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+
+        .dest-row {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .dest-row:nth-child(even) {
+            grid-template-columns: 1.5fr 1fr;
+        }
+
+        .dest-row:nth-child(even) .dest-image {
+            order: 2;
+        }
+
+        .dest-image img {
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .dest-text h2 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .dest-text p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .package-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            color: #2c3e50;
+        }
+
+        .feature-item i {
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+
+            .dest-row,
+            .dest-row:nth-child(even) {
+                grid-template-columns: 1fr;
+            }
+
+            .dest-row:nth-child(even) .dest-image {
+                order: 0;
+            }
+
+            .dest-image img {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo/logo.jpeg" alt="Sky Global Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="visa-services.html">Visa Services</a></li>
+                    <li><a href="contact.html" class="btn-primary">Contact Us</a></li>
+                </ul>
+                <div class="mobile-menu-btn" style="display: none;">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header"
+        style="background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('images/IMG_5553.JPG'); padding: 200px 0;">
+        <div class="container reveal">
+            <h1>Global Destinations</h1>
+            <p>Handpicked Experiences for the Modern Traveler</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="destination-detail reveal">
+                <!-- Dubai -->
+                <div class="dest-item reveal"
+                    style="margin-bottom: 80px; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+                    <div class="dest-image">
+                        <img src="images/IMG_5553.JPG" alt="Dubai">
+                    </div>
+                    <div class="dest-text">
+                        <h2>Dubai, UAE</h2>
+                        <p>Experience the luxury and innovation of the City of Gold. From the world's tallest building,
+                            Burj Khalifa, to the traditional gold souks and futuristic architecture. Perfect for
+                            shopping, adventure, and family fun.</p>
+                        <p><strong>Best Time to Visit:</strong> November to March (Pleasant weather for outdoor
+                            activities)</p>
+                        <div class="package-features">
+                            <div class="feature-item"><i class="fas fa-hotel"></i> 4/5 Star Hotels</div>
+                            <div class="feature-item"><i class="fas fa-car-side"></i> Desert Safari</div>
+                            <div class="feature-item"><i class="fas fa-passport"></i> Visa Included</div>
+                            <div class="feature-item"><i class="fas fa-utensils"></i> Breakfast Included</div>
+                        </div>
+                        <a href="dubai.html" class="btn-primary">View Package</a>
+                    </div>
+                </div>
+
+                <!-- Doha -->
+                <div class="dest-row">
+                    <div class="dest-image">
+                        <img src="images/IMG_5554.JPG" alt="Doha">
+                    </div>
+                    <div class="dest-text">
+                        <h2>Doha, Qatar</h2>
+                        <p>Discover the stunning architecture and vibrant culture of Doha. A city that beautifully
+                            bridges its rich heritage with futuristic development. Explore the Pearl-Qatar, Katara
+                            Cultural Village, and the Museum of Islamic Art.</p>
+                        <p><strong>Best Time to Visit:</strong> October to April (Cooler temperatures for desert
+                            excursions)</p>
+                        <div class="package-features">
+                            <div class="feature-item"><i class="fas fa-city"></i> City Tours</div>
+                            <div class="feature-item"><i class="fas fa-museum"></i> Museum Entry</div>
+                            <div class="feature-item"><i class="fas fa-shuttle-van"></i> Transports</div>
+                            <div class="feature-item"><i class="fas fa-info-circle"></i> Local Guide</div>
+                        </div>
+                        <a href="doha.html" class="btn-primary">View Package</a>
+                    </div>
+                </div>
+
+                <!-- Malaysia -->
+                <div class="dest-row">
+                    <div class="dest-image">
+                        <img src="images/IMG_5555.JPG" alt="Malaysia">
+                    </div>
+                    <div class="dest-text">
+                        <h2>Malaysia</h2>
+                        <p>Explore the lush rainforests, pristine beaches, and bustling cities of Malaysia. From the
+                            iconic Petronas Twin Towers in Kuala Lumpur to the historic streets of Malacca and the
+                            natural wonders of Borneo.</p>
+                        <p><strong>Best Time to Visit:</strong> December to April or June to August (Depending on
+                            East/West coast)</p>
+                        <div class="package-features">
+                            <div class="feature-item"><i class="fas fa-leaf"></i> Nature Tours</div>
+                            <div class="feature-item"><i class="fas fa-shopping-bag"></i> Shopping Trips</div>
+                            <div class="feature-item"><i class="fas fa-plane"></i> Flight Support</div>
+                            <div class="feature-item"><i class="fas fa-camera"></i> Sightseeing</div>
+                        </div>
+                        <a href="malaysia.html" class="btn-primary">View Package</a>
+                    </div>
+                </div>
+
+                <!-- Cape Town -->
+                <div class="dest-row">
+                    <div class="dest-image">
+                        <img src="images/IMG_5556.JPG" alt="Cape Town">
+                    </div>
+                    <div class="dest-text">
+                        <h2>Cape Town, South Africa</h2>
+                        <p>Marvel at the iconic Table Mountain and the breathtaking coastline. Cape Town is a hub of
+                            culture, cuisine, and adventure. Visit the Cape of Good Hope, Boulders Beach penguins, and
+                            world-class vineyards.</p>
+                        <p><strong>Best Time to Visit:</strong> October to April (Late spring to early autumn)</p>
+                        <div class="package-features">
+                            <div class="feature-item"><i class="fas fa-mountain"></i> Mountain Tours</div>
+                            <div class="feature-item"><i class="fas fa-wine-glass"></i> Wine Tasting</div>
+                            <div class="feature-item"><i class="fas fa-ship"></i> Bay Cruises</div>
+                            <div class="feature-item"><i class="fas fa-binoculars"></i> Safari Options</div>
+                        </div>
+                        <a href="cape-town.html" class="btn-primary">View Package</a>
+                    </div>
+                </div>
+
+                <!-- Zanzibar -->
+                <div class="dest-row">
+                    <div class="dest-image">
+                        <img src="images/IMG_5557.JPG" alt="Zanzibar">
+                    </div>
+                    <div class="dest-text">
+                        <h2>Zanzibar, Tanzania</h2>
+                        <p>Relax on the white sandy beaches and turquoise waters of Zanzibar. A paradise for those
+                            looking for peace, history, and natural beauty. Explore Stone Town, swim with dolphins, and
+                            enjoy the famous Spice Tour.</p>
+                        <p><strong>Best Time to Visit:</strong> June to October (Cool, dry months) or December to
+                            February</p>
+                        <div class="package-features">
+                            <div class="feature-item"><i class="fas fa-swimming-pool"></i> Beach Resorts</div>
+                            <div class="feature-item"><i class="fas fa-fish"></i> Scuba Diving</div>
+                            <div class="feature-item"><i class="fas fa-history"></i> Stone Town Tours</div>
+                            <div class="feature-item"><i class="fas fa-spa"></i> Relaxation</div>
+                        </div>
+                        <a href="zanzibar.html" class="btn-primary">View Package</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Sky Global Travel & Tours</h3>
+                    <p>Connecting you to the world with professional travel and visa services.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> Harare, Zimbabwe</p>
+                    <p><i class="fas fa-phone" style="margin-right: 10px;"></i> +91 97792 92603</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> info@skyglobaltravels.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sky Global Travel & Tours. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

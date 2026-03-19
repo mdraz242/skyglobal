@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Sky Global Travel & Tours</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('images/hero.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 200px 0;
+            text-align: center;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            height: 300px;
+            transition: var(--transition);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo/logo.jpeg" alt="Sky Global Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="visa-services.html">Visa Services</a></li>
+                    <li><a href="contact.html" class="btn-primary">Contact Us</a></li>
+                </ul>
+                <div class="mobile-menu-btn" style="display: none;">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container reveal">
+            <h1>Travel Gallery</h1>
+            <p>Capturing Unforgettable Moments Across the Globe</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="gallery-grid reveal">
+                <div class="gallery-item">
+                    <img src="images/new-images/WhatsApp Image 2026-03-14 at 1.08.59 AM (1).jpeg" alt="Travel Moment">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/new-images/WhatsApp Image 2026-03-14 at 1.09.00 AM.jpeg" alt="Travel Moment">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/new-images/WhatsApp Image 2026-03-14 at 1.09.01 AM.jpeg" alt="Travel Moment">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/new-images/WhatsApp Image 2026-03-14 at 1.09.02 AM.jpeg" alt="Travel Moment">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/new-images/WhatsApp Image 2026-03-14 at 1.09.03 AM.jpeg" alt="Travel Moment">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/new-images/WhatsApp Image 2026-03-14 at 1.09.05 AM (1).jpeg" alt="Travel Moment">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/new-images/WhatsApp Image 2026-03-14 at 1.09.05 AM (2).jpeg" alt="Travel Moment">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/new-images/WhatsApp Image 2026-03-14 at 1.09.05 AM.jpeg" alt="Travel Moment">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/new-images/WhatsApp Image 2026-03-14 at 1.09.06 AM.jpeg" alt="Travel Moment">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/new-images/WhatsApp Image 2026-03-14 at 1.09.07 AM (1).jpeg" alt="Travel Moment">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/new-images/WhatsApp Image 2026-03-14 at 1.09.08 AM (1).jpeg" alt="Travel Moment">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/new-images/WhatsApp Image 2026-03-14 at 1.09.09 AM (1).jpeg" alt="Travel Moment">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/new-images/WhatsApp Image 2026-03-14 at 1.09.10 AM.jpeg" alt="Travel Moment">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/new-images/WhatsApp Image 2026-03-14 at 1.09.11 AM.jpeg" alt="Travel Moment">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/new-images/WhatsApp Image 2026-03-14 at 1.09.13 AM.jpeg" alt="Travel Moment">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Sky Global Travel & Tours</h3>
+                    <p>Connecting you to the world with professional travel and visa services.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Contact</h3>
+                    <p><i class="fas fa-phone"></i> +91 97792 92603</p>
+                    <p><i class="fas fa-envelope"></i> info@skyglobaltravels.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Harare, Zimbabwe</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sky Global Travel & Tours. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
