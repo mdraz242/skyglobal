@@ -1,0 +1,7 @@
+.DS_Store
+Archive.zip
+images/.DS_Store
+node_modules/
+dist/
+.env
+.history/

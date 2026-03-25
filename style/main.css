@@ -174,7 +174,7 @@ header .btn-primary {
 
 .hero {
     height: 110vh;
-    background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('../images/hero.jpeg');
+    background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('../images/hero-p.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -276,7 +276,8 @@ footer ul li a:hover {
 .social-icon:hover {
     background: var(--secondary-color);
     transform: translateY(-5px);
-    padding-left: 0 !important; /* Override the default footer hover padding */
+    padding-left: 0 !important;
+    /* Override the default footer hover padding */
 }
 
 /* Common Sections */
@@ -316,6 +317,7 @@ footer ul li a:hover {
     .container {
         padding: 0 15px;
     }
+
     header {
         padding: 0.8rem 0;
     }
@@ -359,7 +361,8 @@ footer ul li a:hover {
     }
 
     .hero {
-        background-attachment: scroll; /* Better for mobile performance */
+        background-attachment: scroll;
+        /* Better for mobile performance */
     }
 
     .hero-mini {
@@ -449,9 +452,11 @@ footer ul li a:hover {
     0% {
         box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
     }
+
     70% {
         box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
     }
+
     100% {
         box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
     }
